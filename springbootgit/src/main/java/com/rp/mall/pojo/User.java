@@ -6,6 +6,6 @@ public class User implements Serializable {
     private  String userName;
 
     public static void main(String[] args) {
-
+        System.out.println("hahaha");
     }
 }
