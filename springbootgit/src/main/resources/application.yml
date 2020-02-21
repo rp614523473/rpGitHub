@@ -1,7 +1,7 @@
+mybatis:
+  type-aliases-package: com.rp.mall.mapper
 spring:
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    data-username: root
-    data-password: rp666l
-    url: jdbc:mysql://localhost/mall
-
+    url: jdbc:mysql:///mall?serverTimezone=Asia/Shanghai
+    username: root
+    password: rp666

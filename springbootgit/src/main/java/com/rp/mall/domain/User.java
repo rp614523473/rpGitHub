@@ -11,15 +11,6 @@ public class User implements Serializable {
         return uid;
     }
 
-
-    public String toString() {
-        return "User{" +
-                "uid=" + uid +
-                ", userName='" + userName + '\'' +
-                ", userAddress='" + userAddress + '\'' +
-                '}';
-    }
-
     public void setUid(Integer uid) {
         this.uid = uid;
     }
@@ -38,5 +29,14 @@ public class User implements Serializable {
 
     public void setUserAddress(String userAddress) {
         this.userAddress = userAddress;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "uid=" + uid +
+                ", userName='" + userName + '\'' +
+                ", userAddress='" + userAddress + '\'' +
+                '}';
     }
 }
