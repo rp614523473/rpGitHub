@@ -15,8 +15,8 @@ public class BookController {
    @Autowired
    private BookService bookService;
 
-   @GetMapping("/find")
-   public List<Book> findByPage(@RequestParam Integer page){
+   @GetMapping("/find/{page}")
+   public List<Book> findByPage(@PathVariable Integer page){
        return this.bookService.findByPage(page);
    }
 
