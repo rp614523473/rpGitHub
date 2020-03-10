@@ -6,6 +6,25 @@ public class User implements Serializable {
     private  Integer  uid;
     private  String userName;
     private  String userAddress;
+    private  String password;
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "uid=" + uid +
+                ", userName='" + userName + '\'' +
+                ", userAddress='" + userAddress + '\'' +
+                ", password='" + password + '\'' +
+                '}';
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
     public Integer getUid() {
         return uid;
@@ -31,12 +50,4 @@ public class User implements Serializable {
         this.userAddress = userAddress;
     }
 
-    @Override
-    public String toString() {
-        return "User{" +
-                "uid=" + uid +
-                ", userName='" + userName + '\'' +
-                ", userAddress='" + userAddress + '\'' +
-                '}';
-    }
 }

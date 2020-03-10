@@ -1,7 +1,7 @@
 package com.rp.mall.controller;
 
 import com.rp.mall.domain.User;
-import com.rp.mall.service.impl.UserServiceImpl;
+import com.rp.mall.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,7 +12,7 @@ import java.util.List;
 public class UserController {
 
     @Autowired
-     private UserServiceImpl userService;
+     private UserService userService;
 
     @RequestMapping("/hello")
     public String  sayHello()

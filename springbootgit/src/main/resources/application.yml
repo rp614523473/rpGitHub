@@ -1,7 +1,10 @@
+
 mybatis:
   type-aliases-package: com.rp.mall.mapper
 spring:
   datasource:
-    url: jdbc:mysql:///mall?serverTimezone=Asia/Shanghai
+    url: jdbc:mysql:///heima?serverTimezone=Asia/Shanghai
     username: root
     password: rp666
+server:
+  port: 8081
